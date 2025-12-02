@@ -109,7 +109,6 @@ int main(){
     Building dest = CSUEB[0]; //destination
     /* PROMPTS */
     while (choice != -1){//sentinel
-        cout << "Hello world";
         insertionSortStrings(CSUEB);//IMPORTANT: sort the vector every time the menu pops up to make Bsearch work
         cout << "================================================\n";//to look nice
         cout << "MENU:\n(1) to add building data.\n(2) to change speed.\n(3) to set time of arrival.\n(4) to change arrival location.\n(5) to change meridian.";//prompts 1: long edition
