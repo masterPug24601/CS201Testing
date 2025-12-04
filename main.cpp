@@ -24,8 +24,6 @@ double totalTime(int hours, int minutes, char meridian){//get total time from ho
         }
 void printHrsMin(double totTime, char mer){ //print total number of minutes as hh:mm
     int totHours = totTime / 60; //get total amount of hours
-    if (mer == 'p') //ADDITION: RESET HOURS
-        totHours -= 12; //reduce by 12 for pm
     if ((mer == 'p' || mer == 'a') && totHours > 12){
         totHours = 0 + (int)totHours % 12;
     }
@@ -198,10 +196,10 @@ int main(){
             cout << "\n(a) for AM.\n(p) for PM\n(m) for military time (24 hour time)\n";
             cin >> mer;//set
             while(mer != 'a' || mer != 'p' || mer != 'm'){//ADDITION: INPUT VALIDATION
-                cout << "Invalid input. Try again: ";
-                cin >> mer;
                 if (mer == 'a' || mer == 'p' || mer == 'm')
                     break;
+                cout << "Invalid input. Try again: ";
+                cin >> mer;
             }//END OF ADDITION
             cin.ignore();//ignore
             cout << "Done.\n";//notice
