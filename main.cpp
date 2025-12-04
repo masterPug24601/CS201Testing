@@ -106,7 +106,7 @@ int main(){
     CSUEB.emplace_back("North Science", 2047.53, 768.29, 1146.16, 502.5);
     CSUEB.emplace_back("Art and Education", 1389.0, 1150.98, 1006.79, 1218.96);
     CSUEB.emplace_back("CORE", 2026.3, 1157.48, 880.41, 782.85);
-    CSUEB.emplace_back("Meiklejohn Hall", 2538.0, 1659.16, 1128.49, 1069.16)
+    CSUEB.emplace_back("Meiklejohn Hall", 2538.0, 1659.16, 1128.49, 1069.16);
     Building dest = CSUEB[0]; //destination
     /* PROMPTS */
     while (choice != -1){//sentinel
